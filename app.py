@@ -1,4 +1,4 @@
-# This code only works with quadratic equations
+# This code only works with second degree equation
 
 import math
 
@@ -9,7 +9,7 @@ def calc(a, b, c):
     delta = b ** 2 - 4 * a * c
 
     if delta < 0:
-        print(f'Esta equação retorna um delta negativo: {delta}\nPortanto, não pode ser resolvida')
+        print(f'Esta equação retorna um delta negativo: {delta}\nPortanto, não pode ser resolvida no conjunto dos números reais')
         return
 
     delta_root = math.sqrt(delta)
