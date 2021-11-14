@@ -1,5 +1,4 @@
-# This code only works with second degree equation
-
+# This code only works with complete second degree equation
 import math
 
 def calc(a, b, c):
