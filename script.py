@@ -9,7 +9,7 @@ def calc(a, b, c):
     delta = b ** 2 - 4 * a * c
 
     if delta < 0:
-        print(f'Esta equação retorna um delta negativo: {delta}\nPortanto, não pode ser resolvida no conjunto dos números reais')
+        print(f'This equation returns a negative delta: {delta}\nThen, it cannot be solved in the real numbers group')
         return
 
     delta_root = math.sqrt(delta)
@@ -21,14 +21,14 @@ def calc(a, b, c):
         bhaskara_1 = f'({-b} + √{delta}) / {2 * a}'
         bhaskara_2 = f'({-b} - √{delta}) / {2 * a}'
 
-    print(f'O valor de X₁ é: {bhaskara_1}\nO valor de X₂ é: {bhaskara_2}')
+    print(f'X₁: {bhaskara_1}\nX₂: {bhaskara_2}')
 
 def get_value(which, warn=False):
     try:
         if warn is True:
-            value = float(input(f'Digite um valor válido para {letter}! '))
+            value = float(input(f'Type a valid number for {letter}! '))
         else:
-            value = float(input(f'Qual o valor de {which}? '))
+            value = float(input(f'What is the value of {which}? '))
     except ValueError:
         get_value(which, True)
     
